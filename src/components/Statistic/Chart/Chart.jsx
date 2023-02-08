@@ -17,7 +17,7 @@ import { diargamColors } from '../../../styles/Variables';
 ChartJS.register(ArcElement, Tooltip);
 
 const Chart = ({ transactions }) => {
-  const balance = useSelector(getBalance);
+  const balance = useSelector(getBalance) || 0;
 
   let isExpensTrans = false;
   let isIncomeTrans = false;

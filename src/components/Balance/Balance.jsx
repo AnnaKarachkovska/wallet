@@ -7,7 +7,7 @@ import { BalanceContainer, BalanceText } from "./Balance.styled";
 
 const Balance = () => {
   const { t } = useTranslation();
-  const balance = useSelector(getBalance);
+  const balance = useSelector(getBalance) || 0;
 
   return (
     <BalanceContainer>
